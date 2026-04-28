@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jira Style Task Manager</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="jira-card">
+        <h3>📋 Task Manager</h3>
+
+        <div class="input-group">
+            <input type="text" id="taskInput" placeholder="Añadir una tarea...">
+            <button id="addBtn" class="btn-add">Crear</button>
+        </div>
+
+        <!-- Spinner de carga -->
+        <div class="loading" id="loading">
+            <div class="spinner"></div>
+            <span>Cargando tareas...</span>
+        </div>
+
+        <!-- Banner de error -->
+        <div class="error-banner" id="errorBanner" style="display:none;">
+            <span id="errorMessage">Error de conexión</span>
+            <button id="errorClose">&times;</button>
+        </div>
+
+        <ul id="taskList" class="task-list"></ul>
+    </div>
+
+    <!-- Scripts separados en módulos (sin type=module para compatibilidad file://) -->
+    <script src="js/state.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

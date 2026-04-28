@@ -1,0 +1,7 @@
+com\mycompany\tasksapi\resources\services\TaskService.class
+com\mycompany\tasksapi\restapi\daos\TaskDAO.class
+com\mycompany\tasksapi\restapi\models\Task.class
+com\mycompany\tasksapi\JakartaRestConfiguration.class
+com\mycompany\tasksapi\utils\JPAUtil.class
+com\mycompany\tasksapi\resources\JakartaEE10Resource.class
+com\mycompany\tasksapi\resources\controllers\TaskController.class
