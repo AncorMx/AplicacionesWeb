@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="logo.png">
+    <title>Nexus | Dashboard</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div id="app">
+        <nav>
+            <div style="display: flex; align-items: center; gap: 8px;">
+                <img src="/assets/logo.png" alt="Logo" style="width: 32px; height: 32px;">
+                <a href="index.html" class="nav-brand">nexus</a>
+            </div>
+            <div class="nav-actions">
+                <button id="logout-btn" class="btn action-btn"><i class="fas fa-sign-out-alt"></i> Salir</button>
+            </div>
+        </nav>
+
+        <main class="main-content">
+            <div class="composer">
+                <div class="composer-header" id="composer-user-info">
+                    <!-- Dynamic user avatar and trigger -->
+                </div>
+            </div>
+            <div id="posts-container">
+                <div style="text-align: center; padding: 20px;">
+                    <i class="fas fa-circle-notch fa-spin" style="color: var(--primary);"></i> Cargando posts...
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Modals -->
+    <div id="modal-root"></div>
+
+    <script type="module" src="js/pages/app.js"></script>
+</body>
+</html>
